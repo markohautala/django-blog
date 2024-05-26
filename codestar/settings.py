@@ -47,6 +47,14 @@ INSTALLED_APPS = [
     'blog',
 ]
 
+# Additional configuration if needed
+SUMMERNOTE_CONFIG = {
+    'iframe': True,  # Use iframe for the editor
+    'width': '100%',  # Editor width
+    'height': '480',  # Editor height
+    # Any additional Summernote settings you need
+}
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
