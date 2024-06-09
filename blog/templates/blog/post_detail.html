@@ -56,7 +56,7 @@
           class="p-2 comments {% if not comment.approved and comment.author == user %} faded{% elif not comment.approved %} d-none{% endif %}"
         >
           <p class="font-weight-bold">
-            {{ comment.author }}
+            {{ comment.author|capfirst }}
             <span class="font-weight-normal"> {{ comment.created_on }} </span>
             wrote:
           </p>
@@ -76,7 +76,7 @@
             <div class="card-body">
               {% if user.is_authenticated %}
               <h3>Leave a comment:</h3>
-              <p>Posting as: {{ user.username }}</p>
+              <p>Posting as: {{ user.username|capfirst }}</p>
               <form id="commentForm" method="post"
                 style="margin-top: 1.3em;">
                 {{ comment_form | crispy }}
