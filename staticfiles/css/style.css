@@ -163,3 +163,17 @@ body {
 .profile-image {
     width: 75%;
 }
+
+/* Styling the social icons in footer */
+.social-icon {
+    font-size: 2em; /* Adjust the size as needed */
+    color: lightgreen; /* Set the color to light green */
+}
+
+.footer a .social-icon {
+    transition: color 0.3s; /* Add a transition effect */
+}
+
+.footer a:hover .social-icon {
+    color: #32CD32; /* Change color on hover for better effect, optional */
+}

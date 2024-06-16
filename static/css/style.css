@@ -42,8 +42,9 @@ body {
     position: absolute;
     bottom: 5%;
     min-width: 30%;
-    left: -2px;
-    background-color: #188181;
+    left: -5px;
+    border-radius: 5px;
+    background-color: #E6B9DE;
 }
 
 .scale {
@@ -162,4 +163,30 @@ body {
 
 .profile-image {
     width: 75%;
+}
+
+/* Styling the social icons in footer */
+/* this fixed the trailing underline after all the social icons */
+.social-icon {
+    font-size: 2em; /* Adjust the size as needed */
+    color: #E6B9DE; /* Set the color to light green */
+    text-decoration: none; /* Remove underline */
+    vertical-align: middle; /* Align icons vertically */
+}
+
+.footer a {
+    display: inline-block; /* Ensure links behave as inline-block */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer a:hover .social-icon {
+    color: #FAE7F3; /* Change color on hover */
+}
+
+.custom-footer-color {
+    background-color: #11009E;
+}
+
+.custom-navbar-color {
+    background-color: #EEF7FF;
 }
