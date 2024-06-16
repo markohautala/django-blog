@@ -99,7 +99,9 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #E6B9DE;
+    text-decoration: none;
+    background-color: #000000;
 }
 
 .post-title {
@@ -122,6 +124,8 @@ body {
 .btn-signup:active {
     background-color: #fff;
     color: #23BBBB;
+    border: 1px solid #000000 !important;
+    font-size: larger;
 }
 
 .link {

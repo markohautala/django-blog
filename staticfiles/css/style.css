@@ -42,8 +42,9 @@ body {
     position: absolute;
     bottom: 5%;
     min-width: 30%;
-    left: -2px;
-    background-color: #188181;
+    left: -5px;
+    border-radius: 5px;
+    background-color: #E6B9DE;
 }
 
 .scale {
@@ -98,7 +99,9 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #E6B9DE;
+    text-decoration: none;
+    background-color: #000000;
 }
 
 .post-title {
@@ -121,6 +124,8 @@ body {
 .btn-signup:active {
     background-color: #fff;
     color: #23BBBB;
+    border: 1px solid #000000 !important;
+    font-size: larger;
 }
 
 .link {
@@ -165,15 +170,27 @@ body {
 }
 
 /* Styling the social icons in footer */
+/* this fixed the trailing underline after all the social icons */
 .social-icon {
     font-size: 2em; /* Adjust the size as needed */
-    color: lightgreen; /* Set the color to light green */
+    color: #E6B9DE; /* Set the color to light green */
+    text-decoration: none; /* Remove underline */
+    vertical-align: middle; /* Align icons vertically */
 }
 
-.footer a .social-icon {
-    transition: color 0.3s; /* Add a transition effect */
+.footer a {
+    display: inline-block; /* Ensure links behave as inline-block */
+    text-decoration: none; /* Remove underline */
 }
 
 .footer a:hover .social-icon {
-    color: #32CD32; /* Change color on hover for better effect, optional */
+    color: #FAE7F3; /* Change color on hover */
+}
+
+.custom-footer-color {
+    background-color: #11009E;
+}
+
+.custom-navbar-color {
+    background-color: #EEF7FF;
 }
